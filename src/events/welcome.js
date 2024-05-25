@@ -36,7 +36,7 @@ async function handleWelcomeEvent(api, event) {
           const welcomeMessage = `Hello, ${name},\nWelcome to ${threadInfo.threadName}.\nYou are the ${memberCount}th member of our community; please enjoy! 🥳♥`;
 
 
-const t = await axios.get(`https://tanjiro-api.onrender.com/welcomev2?uid=${newParticipantID}&name=${name}%20Senpai&member=${memberCount}&bg=https://i.imgur.com/qschtOP.jpg&threadname=${threadInfo.threadName}&api_key=tanjiro`, { responseType: "arraybuffer"});
+const t = await axios.get(`https://join2apibyjonell-7b4fde8396f3.herokuapp.com/join2?name=${firstName}&id=${senderID}&background=${avt1}&count=${memberCount}`, { responseType: "arraybuffer"});
 const avatar = t.data;
 
 let imagePath = path.join(__dirname, "cache", `${newParticipantID}.png`);

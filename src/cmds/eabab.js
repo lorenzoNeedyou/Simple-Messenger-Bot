@@ -6,7 +6,7 @@ module.exports = {
 eurix: {
   name: "eabab",
   version: "9",
-  credits: "Eugene Aguilar",
+  credits: "unknown",
   description: "Generate random shoti 😝",
   permission: 0,
   usages: "[eabab]",

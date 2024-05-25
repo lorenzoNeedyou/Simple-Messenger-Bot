@@ -25,7 +25,7 @@ async function handleLeaveEvent(api, event) {
 
         const memberCount = threadInfo.participantIDs.length;
 
-        const response = await axios.get(`https://tanjiro-api.onrender.com/goodbyev2?uid=${leftParticipantID}&name=${encodeURIComponent(userName)}%20Senpai&member=${memberCount}&bg=https://i.imgur.com/qschtOP.jpg&api_key=tanjiro`, { responseType: "arraybuffer" });
+        const response = await axios.get(`https://leavecanvasapibyjonell-5715724d201c.herokuapp.com/leave?name=${firstName}&id=${event.logMessageData.leftParticipantFbId}&background=${avt1}&count=${memberCount}`, { responseType: "arraybuffer" });
         const img = response.data;
 
         const imgPath = path.join(__dirname, "cache", `${leftParticipantID}.png`);

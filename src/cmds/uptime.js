@@ -3,7 +3,7 @@ const moment = require('moment');
 module.exports = {
 eurix: {
     name: "upt",
-    credits: "Eugene Aguilar",
+    credits: "unknown",
     version: "1.0.0",
     description: "Shows how long the bot has been running.",
     usages: "uptime",

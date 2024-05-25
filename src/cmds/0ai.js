@@ -5,7 +5,7 @@ module.exports = {
       name: "ai",
      version: "9.0.2",
       description: "Chat gpt4",
-      credits: "Eugene Aguilar",
+      credits: "Unknown",
       permission: 0,
       usages: "ai [ ask ]",
       cooldown: 2,
